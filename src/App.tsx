@@ -1,5 +1,5 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiButton from './components/MuiButton';
+import MuiTextField from './components/MuiTextField';
 
 const defaultTheme = createTheme({
   typography: {
@@ -13,7 +13,8 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       {/* <MuiTypography /> */}
-      <MuiButton />
+      {/* <MuiButton /> */}
+      <MuiTextField />
     </ThemeProvider>
   );
 }
