@@ -1,8 +1,18 @@
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
 import SendIcon from '@mui/icons-material/Send';
-import { Button, ButtonGroup, Stack } from '@mui/material';
+import { Button, ButtonGroup, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
+import { useState } from 'react';
 
 function MuiButton() {
+  const [formats, setFormats] = useState<string[]>([]);
+
+  const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats: string[]) => {
+    setFormats(updatedFormats);
+  };
+
   return (
     <Stack
       spacing={4}
@@ -102,7 +112,7 @@ function MuiButton() {
         <Button
           variant="contained"
           startIcon={<SendIcon />} // start
-          disableRipple
+          disableRipple // stop ripple, color when clicked
         >
           Send
         </Button>
@@ -137,6 +147,28 @@ function MuiButton() {
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+      </Stack>
+
+      {/* choose in group */}
+      <Stack direction="row">
+        <ToggleButtonGroup
+          area-label="text formating"
+          value={formats}
+          onChange={handleFormatChange}
+          color="error"
+        >
+          {/* 1 click => choose, 2 click unchoose. Accept choose all */}
+          {/* ['bold', 'italic', 'underlined'] */}
+          <ToggleButton value="bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic">
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
