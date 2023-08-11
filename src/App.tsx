@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Stack, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { useState } from 'react';
 
 function App() {
@@ -6,13 +6,12 @@ function App() {
 
   return (
     <>
-      <Typography />
+      <Typography variant="h6">h6</Typography>
+      <Typography variant="subtitle1">Heading</Typography>
+      <Typography variant="subtitle2">Heading</Typography>
 
-      <ButtonGroup />
-
-      <Button />
-
-      <Stack />
+      <Typography variant="body1">body1</Typography>
+      <Typography variant="body2">body2</Typography>
     </>
   );
 }
