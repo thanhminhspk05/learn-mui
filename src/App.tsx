@@ -4,7 +4,7 @@ import MuiButton from './components/MuiButton';
 const defaultTheme = createTheme({
   typography: {
     button: {
-      textTransform: 'none',
+      textTransform: 'capitalize',
     },
   },
 });
