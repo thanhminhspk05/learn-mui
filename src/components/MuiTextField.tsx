@@ -7,7 +7,7 @@ function MuiTextField() {
   return (
     <Stack
       spacing={4}
-      marginTop={5}
+      margin={4}
     >
       <Stack
         direction="row"
