@@ -1,5 +1,5 @@
 import SendIcon from '@mui/icons-material/Send';
-import { Button, Stack } from '@mui/material';
+import { Button, ButtonGroup, Stack } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 
 function MuiButton() {
@@ -115,8 +115,6 @@ function MuiButton() {
         </Button>
 
         {/* without button component */}
-        <SendIcon />
-
         <IconButton
           aria-label="send"
           color="error"
@@ -124,17 +122,21 @@ function MuiButton() {
         >
           <SendIcon />
         </IconButton>
+      </Stack>
 
-        <Button variant="contained">
-          <IconButton
-            aria-label="send"
-            color="error"
-            size="small"
-          >
-            <SendIcon />
-          </IconButton>
-          Send
-        </Button>
+      <Stack direction="row">
+        {/* 3 buttons near each other */}
+        {/* text, contained, outlined  */}
+        <ButtonGroup
+          variant="contained"
+          orientation="vertical" // same with direction
+          color="warning"
+          aria-label="alignment button group"
+        >
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
