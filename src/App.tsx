@@ -1,5 +1,5 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiSelect from './components/MuiSelect';
+import MuiRadioButton from './components/MuiRadioButton';
 
 const defaultTheme = createTheme({
   typography: {
@@ -15,7 +15,8 @@ function App() {
       {/* <MuiTypography /> */}
       {/* <MuiButton /> */}
       {/* <MuiTextField /> */}
-      <MuiSelect />
+      {/* <MuiSelect /> */}
+      <MuiRadioButton />
     </ThemeProvider>
   );
 }
