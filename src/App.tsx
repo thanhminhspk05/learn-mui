@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiLayout from './components/MuiLayout';
+import MuiCard from './components/MuiCard';
 
 const defaultTheme = createTheme({
   typography: {
@@ -26,7 +26,8 @@ function App() {
         {/* <MuiSwitch /> */}
         {/* <MuiRating /> */}
         {/* <MuiAutoComplete /> */}
-        <MuiLayout />
+        {/* <MuiLayout /> */}
+        <MuiCard />
       </Stack>
     </ThemeProvider>
   );
