@@ -7,15 +7,27 @@ function MuiSelect() {
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    console.log(value);
     setCountries(typeof value === 'string' ? value.split(',') : value);
   };
 
   return (
-    <Stack
-      spacing={4}
-      margin={4}
-    >
+    <Stack spacing={4}>
+      {/* select 1 item */}
+      <Box width="250px">
+        <TextField
+          label="Select country"
+          value={countries}
+          onChange={handleOnChange}
+          fullWidth
+          select
+        >
+          <MenuItem value="IN">India</MenuItem>
+          <MenuItem value="US">USA</MenuItem>
+          <MenuItem value="AU">Australia</MenuItem>
+        </TextField>
+      </Box>
+
+      {/* select multi item */}
       <Box width="250px">
         <TextField
           label="Select country"
