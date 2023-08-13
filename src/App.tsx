@@ -1,7 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import MuiAutoComplete from './components/MuiAutoComplete';
-import MuiSelect from './components/MuiSelect';
 
 const defaultTheme = createTheme({
   typography: {
@@ -21,7 +20,7 @@ function App() {
         {/* <MuiTypography /> */}
         {/* <MuiButton /> */}
         {/* <MuiTextField /> */}
-        <MuiSelect />
+        {/* <MuiSelect /> */}
         {/* <MuiRadioButton /> */}
         {/* <MuiCheckbox /> */}
         {/* <MuiSwitch /> */}
