@@ -1,5 +1,6 @@
+import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiRadioButton from './components/MuiRadioButton';
+import MuiCheckbox from './components/MuiCheckbox';
 
 const defaultTheme = createTheme({
   typography: {
@@ -12,11 +13,14 @@ const defaultTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      {/* <MuiTypography /> */}
-      {/* <MuiButton /> */}
-      {/* <MuiTextField /> */}
-      {/* <MuiSelect /> */}
-      <MuiRadioButton />
+      <Stack padding={10}>
+        {/* <MuiTypography /> */}
+        {/* <MuiButton /> */}
+        {/* <MuiTextField /> */}
+        {/* <MuiSelect /> */}
+        {/* <MuiRadioButton /> */}
+        <MuiCheckbox />
+      </Stack>
     </ThemeProvider>
   );
 }
