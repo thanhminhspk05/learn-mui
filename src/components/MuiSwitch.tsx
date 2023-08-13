@@ -8,8 +8,6 @@ function MuiSwitch() {
     setChecked(event.target.checked);
   };
 
-  console.log({ checked });
-
   return (
     <Box>
       <FormControlLabel
