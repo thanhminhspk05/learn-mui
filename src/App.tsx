@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiAccordion from './components/MuiAccordion';
+import MuiAppBar from './components/MuiNavBar';
 
 const defaultTheme = createTheme({
   typography: {
@@ -28,7 +28,9 @@ function App() {
         {/* <MuiAutoComplete /> */}
         {/* <MuiLayout /> */}
         {/* <MuiCard /> */}
-        <MuiAccordion />
+        {/* <MuiAccordion /> */}
+        {/* <MuiImageList /> */}
+        <MuiAppBar />
       </Stack>
     </ThemeProvider>
   );
