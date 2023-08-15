@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiTooltips from './components/MuiTooltip';
+import MuiCircular from './components/MuiProcess';
 
 const defaultTheme = createTheme({
   typography: {
@@ -38,7 +38,9 @@ function App() {
         {/* <MuiBottomNavigation /> */}
         {/* <MuiAvatars /> */}
         {/* <MuiChips /> */}
-        <MuiTooltips />
+        {/* <MuiTooltips /> */}
+        {/* <MuiFormDialog /> */}
+        <MuiCircular />
       </Stack>
     </ThemeProvider>
   );
