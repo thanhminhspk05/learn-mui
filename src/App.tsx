@@ -1,5 +1,7 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import MuiTooltips from './components/MuiTooltip';
+import MuiAvatars from './components/MuiAvatars';
 
 const defaultTheme = createTheme({
   typography: {
@@ -14,7 +16,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <Stack
         spacing={2}
-        padding={2}
+        padding={5}
       >
         {/* <MuiTypography /> */}
         {/* <MuiButton /> */}
@@ -35,8 +37,9 @@ function App() {
         {/* <MiniDrawer /> */}
         {/* <MuiSpeedDial /> */}
         {/* <MuiBottomNavigation /> */}
-        {/* <MuiAvatars /> */}
+        <MuiAvatars />
         {/* <MuiChips /> */}
+        <MuiTooltips />
       </Stack>
     </ThemeProvider>
   );

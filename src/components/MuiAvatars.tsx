@@ -1,4 +1,4 @@
-import { AvatarGroup, Stack } from '@mui/material';
+import { AvatarGroup, Stack, Tooltip } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
@@ -47,11 +47,16 @@ export default function MuiAvatars() {
     <>
       <AvatarGroup max={10}>
         {names.map((item, index) => (
-          <Avatar
-            key={index}
-            alt={item}
-            src={`https://source.unsplash.com/random/200x200?sig=${index + 1}}`}
-          />
+          <Tooltip
+            title={item}
+            placement="bottom"
+          >
+            <Avatar
+              key={index}
+              alt={item}
+              src={`https://source.unsplash.com/random/200x200?sig=${index + 1}}`}
+            />
+          </Tooltip>
         ))}
       </AvatarGroup>
 
