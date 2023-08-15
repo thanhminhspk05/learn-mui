@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiSpeedDial from './components/MuiSpeedDial';
+import MuiBottomNavigation from './components/MuiBottomNavigation';
 
 const defaultTheme = createTheme({
   typography: {
@@ -14,8 +14,8 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Stack
-        spacing={4}
-        padding={10}
+        spacing={2}
+        padding={2}
       >
         {/* <MuiTypography /> */}
         {/* <MuiButton /> */}
@@ -34,7 +34,8 @@ function App() {
         {/* <MuiLink /> */}
         {/* <MuiBreadcrumb /> */}
         {/* <MiniDrawer /> */}
-        <MuiSpeedDial />
+        {/* <MuiSpeedDial /> */}
+        <MuiBottomNavigation />
       </Stack>
     </ThemeProvider>
   );
