@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import MuiBreadcrumb from './components/MuiBreadcrumbs';
+import MuiSpeedDial from './components/MuiSpeedDial';
 
 const defaultTheme = createTheme({
   typography: {
@@ -32,7 +32,9 @@ function App() {
         {/* <MuiImageList /> */}
         {/* <MuiAppBar /> */}
         {/* <MuiLink /> */}
-        <MuiBreadcrumb />
+        {/* <MuiBreadcrumb /> */}
+        {/* <MiniDrawer /> */}
+        <MuiSpeedDial />
       </Stack>
     </ThemeProvider>
   );
